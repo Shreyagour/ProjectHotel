@@ -1,0 +1,63 @@
+div
+{
+	background-image: url("https://media.nomadicmatt.com/maldivestopkristin.jpg");/* adding image in div tag*/
+	height: 200px;
+	width: 100%;
+	background-position:center;/*setting postion in centre for div*/
+	
+	background-repeat:no-repeat;/* image doesn't repeat*/
+	border-color: coral;
+}
+#fullpage /*setting and styling table on page*/
+{
+	margin:100px;
+	
+	font-size:200%;
+}
+#styling2/*styling heading of the page*/
+{
+	text-align:center;
+	color:rgb(16,16,16);/*rgb value to set color of font*/
+	font-size:300%;
+	font-family: "Lucida Console", Courier, monospace;
+	text-decoration: underline;
+}
+#describe/*styling first para on page*/
+{
+	text-align:center;
+	font-size:190%;
+	color:white;
+	font-style: oblique;
+}
+#describe2/*styling second para on page*/
+{
+	text-align:left;
+	font-size:190%;
+	color:#330066;/*setting hex value for color of font*/
+	font-style: italic;
+}
+#styling/*styling heading on the div tag*/
+{
+	text-align:center;
+	color:black;
+	font-size:500%
+}
+body
+{
+ background-color:#6666FF;/*setting bg color by hex*/
+}
+.format/*format fields in the table*/
+{
+ color:black;
+ font-size:100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.field/*input fields in the table*/
+{
+	text-align:left;
+}
+.promptvalue/*displaying message prompt in the table*/
+{  
+  color:grey;
+	
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<title>Room Reservation</title>
+<link rel="stylesheet" type="text/css" href="add2.css"> <!--  adding css file for styling-->
+<script type= "text/javascript" src="addjs.js"></script> <!-- adding js file for js form validation -->
+</head>
+<body>
+<div>
+<h1 id="styling">HOTEL WELKIN</h1> <!-- heading over div tag-->
+</div>
+<form action="#">
+   
+   <h2 id="styling2">WITNESS PARADISE!</h2>
+   <p id="describe"> Planning For Maldives!Check out our amazing hotel rooms for the most
+   comfortable and happy stay of a lifetime. Pick Your best room in just minimum charge ever!
+   The hotel is made up of 90 contemporary villas, half with private, 
+   infinity pools where guests can cool off while enjoying stunning sunrise or sunset views. 
+   The villas are strung across the glittering lagoon or perfectly positioned along the beautiful beach.
+    Restaurants: 5.8 - the world's largest all-glass undersea restaurant and serves a world-class tasting menu 
+  and offers a selection of fine wines from our cellar.
+   COVID safety measures may impact hotel services and fulfillment of certain WELKIN Plus privileges. 
+   Please contact Customer Service for more information prior to your arrival.</p>
+   <p id="describe2">Special Requests will be charged extra on your arrival.<br>For more information
+   please contact our customer number: 
+   555-555-5568. Please fill your details below.</p>
+   <!-- adding images through img src link-->
+
+	<img  border="3" style="clear:left;" src="https://www.sunresortshotels.com/sites/default/files/inline-images/KANUHURA_Boduberu_0.jpg" alt="Example" width="500" height="300">
+	<img border ="3" src="https://www.hideawaybeachmaldives.com/wp-content/uploads/2016/08/Hideaway-Maldives-villas-6-Ocean-villa-12.jpg" alt="Example" width="500" height="300">
+   <img border="3" src="https://cf.bstatic.com/data/xphoto/1182x887/492/49280407.jpg?size=S" alt="Example" width="400" height="300">
+   <img border ="3" src="https://cdn.travelpulse.com/images/99999999-9999-9999-9999-999999999999/b7027a67-d0e6-661a-b624-e54b256d3ef6/630x355.jpg" alt="Example" width="500" height="300">
+	<img border ="3" style="clear:left" src="https://r1imghtlak.mmtcdn.com/df881e0eb74311e7944f02755708f0b3.jpeg?&output-quality=75&downsize=520:350&crop=520:350;2,0&output-format=jpg" alt="Example" width="500" height="300">
+	<img border="3" src="https://www.kuredu.com/wp-content/gallery/sangu-restaurant/Sangu-Pool-Dinner_1600x900.jpg" alt="Example" width="400" height="300">
+	
+	<h3 id="styling2">BOOK YOUR ROOM</h3>
+	<table border="0" id="fullpage"> <!-- creating table -->
+     <tr>
+	 <td class="format">First Name</td>
+	 <td class="field">
+	 <input id="firstelement"  name="firstname" onblur="input1();" required />
+	 <span class ="promptvalue" id="firstnameprompt">&nbsp;</span></td> <!--function input1() called from js validation -->
+	 
+	 <td class="format">Last Name</td>
+	 <td class="field">
+	 <input id="secondelement"  name="lastname" onblur="input2();" required />
+	 <span class="promptvalue" id="secondnameprompt">&nbsp;</span></td> <!--function input2() called from js validation -->
+	 
+	 </tr>
+	 <tr>
+	 <td class= "format">Phone Number</td>
+	 <td class="field">
+	 <input id="thirdelement" name="phonnumber" onblur="input3();" placeholder="xxx-xxx-xxxx" required />
+	 <span class="promptvalue" id="phonenumber"> </span></td> <!--displaying on input by placeholder -->
+	 
+	 </tr>
+	 <tr>
+	 <td class="format">My Email</td>
+     <td class="field"><input type="email" id="email" name="email"/></td><!-- email type input used-->
+	 <td class="format">Password</td>
+	 <td class="field"><input type="password" id="passwordelement" name="pss"/></td><!-- password type input used-->
+	 </tr>
+	 <tr>
+	 <td class="format">Check-in Date</td>
+	 <td class="field"><input type="date" name="date1"/></td><!-- date type input used-->
+	 <td class="format">Check-out Date</td>
+	 <td class="field"><input type="date" name="date2"/></td>	 
+	 </tr>
+	 <tr>
+	 <td class="format">Room Cost</td>
+	 <td class="field">
+	 <input id="pricelement" name="pricevalue" type="text" value="5000.00" readonly /></td><!-- value set for roomcost 5000-->
+	 <td class="format">Rooms</td>
+	 <td class="field">
+	 <input id="quantity" name="quanvalue" type="number" min="1" max="10" onblur="input4();" required /></td><!--function input4 called for js validation -->
+	 </tr>
+	 <tr>
+	 <td class="format">Room Preference</td>
+	 <td class="field"><select name="selectroom"><!-- dropdown menu created-->
+	 <option value="standard">Standard</option>
+	 <option value="deluxe">Deluxe</option>
+	 <option value="suite">Suite</option></td>
+	 </tr>
+	 <tr>
+	 <td class="format">Adults</td>
+	 <td class="field"><input id="number1" name="adults" type="number" min="1" max="20"/></td>
+	 <td class="format">Children</td>
+	 <td class="field"><input id="number11" name="children" type="number" min="1" max="20"/></td>
+	 </tr>
+	 <tr>
+	 <td class="format">Special Requests</h2> <!-- checkbox type input for requests -->
+	 <td class="field">
+	 <input type="checkbox" name="skills" value="swim">Room On High Floor<br>
+	 <input type="checkbox" name="skills" value="sing">Large beds<br>
+	 <input type="checkbox" name="skills" value="swim">Twin Beds<br>
+	 <input type="checkbox" name="skills" value="swim">Ocean View<br>
+	 <input type="checkbox" name="skills" value="swim">Garden View<br>
+	 <input type="checkbox" name="skills" value="swim">Private Beach Room<br>
+	 </td>
+	 </tr>
+	 <tr>
+	 <td>
+	 <span class="btn" onclick="result();">Confirm</span> <!-- onclick event calls result() from js file to display values-->
+	 </td>
+	 </tr>
+	 </table>
+	  <p id="summary"></p><!-- result is displayed in para-->
+	  <p id="describe2">Our location: South Male Atoll, Maldives 08160, Maldives• +960 664-2020</p>
+	 
+	 
+</body>
+</html>
